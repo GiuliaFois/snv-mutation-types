@@ -1,0 +1,16 @@
+biocViews: GeneticVariability
+Package: SNVMutationTypes
+Title: Extract SNV mutation types from VCF files
+Version: 1.0.0
+Authors@R: person("Giulia", "Fois", email="giuliafois5@gmail.com", role = c("aut", "cre"))
+Description: This package exports functions to get and count mutation
+    types starting from  a VCF file. A mutation type defined as a UP[REF>ALT]DOWN string. The
+    reference and alternative nucleotides are taken from the VCF, whereas the upstream and downstream 
+    sequences from a reference genome indicated by the user.
+Imports: Biostrings, GenomicRanges, tools, VariantAnnotation
+Encoding: UTF-8
+License: Artistic-2.0
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: knitr, rmarkdown, BiocStyle, testthat, mockery, SummarizedExperiment, BSgenome.Hsapiens.UCSC.hg19, BSgenome.Hsapiens.UCSC.hg38, methods
+VignetteBuilder: knitr
